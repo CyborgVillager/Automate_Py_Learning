@@ -8,7 +8,7 @@ def ask_user():
     print('A fun fact, your name length is ' + str(len(ask_user)) + ' ^_*')
     print('\n')
 
-
+    #nested function
     def ask_user_for_age():
         while True:
             try:
