@@ -22,6 +22,7 @@ for i in range(total_questions):
     print('    {0} {2} {1}'.format(question[0], question[1], question[2]))
     print('---     ---     ---')
     user_input = input('Enter Answer: ')
+    user_current_question += 1
     if (question_accurate(correct_answer, user_input)):
         print(color.YELLOW + color.BOLD + 'Correct!' + color.END)
         correct += 1
