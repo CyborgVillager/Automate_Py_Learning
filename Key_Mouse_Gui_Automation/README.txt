@@ -1,0 +1,1 @@
+Basic automation / with gui on sending an email through the program
