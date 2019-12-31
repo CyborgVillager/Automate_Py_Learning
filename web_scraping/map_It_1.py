@@ -9,6 +9,6 @@ if len(sys.argv) > 1:
 else:
     # Get address from clipboard
     address = pyperclip.paste()
-    # Once the user has typed their address on the terminal  using this format -> python map_It.py ADDRESS
+    # Once the user has typed their address on the terminal  using this format -> python map_It_1.py ADDRESS
     # They will be redirected to a google map service
 webbrowser.open('https://google.com/maps/place/' + address)
