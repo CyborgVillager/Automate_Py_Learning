@@ -7,8 +7,6 @@ try:
     open_file = open('R&J.txt', 'wb')
     for chunk in aquire_info.iter_content(10000):
         open_file.write(chunk)
-
-
     open_file.close()
     print('Success in aquiring info. To see the information please check ' + text_file_name)
 except OSError:
