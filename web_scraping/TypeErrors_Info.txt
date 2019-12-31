@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="keywords" content="builtin errors in python, errors, python error types, python, python tutorials, free python tutorials, online python tutorials, Free python Tutorials for beginners, learn python, learn python, learn, python for beginners, python tutorials, python Basics, python basics, learn python, python step by step, learn python from scratch, what is python " />
+    <meta name="description" content="Learn built-in error types in Python such as IndexError, NameError, KeyError, ImportError etc. " />
+
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Error Types in Python</title>
+
+<script src="/cdn-cgi/apps/head/pPXHlLb1CGI6YEB-9-_z05e8AO8.js"></script><link href="/Content/bs/bootstrap.min.css" rel="stylesheet" />
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="/Content/css/ttstyle.css?v=2.2" rel="stylesheet" type="text/css" />
+<link href="/Content/css/csharp.css" rel="stylesheet" type="text/css" />
+<meta property="og:url" content="https://www.tutorialsteacher.com/python/error-types-in-python" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Error Types in Python" />
+<meta property="og:image" content="https://www.tutorialsteacher.com/assets/images/fbshare.jpg" />
+
+<!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    window.pgjs = window.pgjs || {};
+    pgjs.gdpr = pgjs.gdpr || {};
+    pgjs.publisher = pgjs.publisher || {};
+    pgjs.publisher.name = 'TutorialsTeacher.com';
+    pgjs.publisher.privacyPolicy = 'https://www.tutorialsteacher.com/aboutus/privacy-policy';
+    pgjs.publisher.logo = 'https://www.tutorialsteacher.com/Content/images/tt-logo2.png';
+    pgjs.publisherCookieWrap = function () {
+        pgjs.loadJS('//m2d.m2.ai/pghb.tutorialsteacher.com.js');
+        pgjs.loadJS('https://www.googletagmanager.com/gtag/js?id=UA-33844821-5');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-33844821-5');
+    }
+</script>
+<script src="https://cdn.pubguru.com/pg.js"></script>
+
+</head>
+<body>
+    <!-- wrapper -->
+    <div class="phWrapper">
+        <header class="phHeader">
+    <nav class="navbar navbar-expand logo-link">
+        <a class="navbar-brand text-uppercase" href="https://www.tutorialsteacher.com">
+            <img src="/Content/images/tt-logo2.png" alt="LOGO" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-flex-icons ml-auto">
+                <li class="followus">Follow Us</li>
+                <li class="nav-item">
+                    <a class="nav-link fb-icon" href="https://www.facebook.com/tutorialsteacher" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link tw-icon" href="https://twitter.com/tutorialstchr" title="Twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+        <nav class="navbar navbar-expand navbar-dark special-color-dark topMenuHorizontal sticky-top">
+
+    <!-- Navbar brand -->
+    <!-- Collapse button -->
+    <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarLeft" aria-controls="#navbarLeft"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="topMenu">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto left">
+            <li class="nav-item">
+                <a href="/" class="nav-link" style="font-size:20px">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/python">Python</a></li>
+            <li class="nav-item">
+                <a class="nav-link" href="/core">ASP.NET Core</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/mvc/asp.net-mvc-tutorials"> MVC</a></li>
+            <li class="nav-item"><a class="nav-link" href="/ioc">IoC  </a></li>
+            <li class="nav-item"><a class="nav-link" href="/webapi/web-api-tutorials">Web API</a></li>
+            <li class="nav-item"><a class="nav-link" href="/csharp/csharp-tutorials">C#</a></li>
+            <li class="nav-item"><a class="nav-link" href="/typescript">TypeScript</a></li>
+            <li class="nav-item"><a class="nav-link" href="/nodejs/nodejs-tutorials">Node.js</a></li>
+            <li class="nav-item dropdown mega-dropdown">
+                <a class="nav-link dropdown-toggle no-caret" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                <div class="dropdown-menu mega-menu v-2 row z-depth-1 special-color" aria-labelledby="navbarDropdownMenuLink1">
+                    <a class="close text-white">&#10005; </a>
+                    <div class="row mx-md-4 mx-1">
+                        <div class="col-md-3 col-sm-6 col-xl-3 sub-menu my-xl-4 mt-4 mb-4">
+                            <h6 class="sub-title text-white">.NET Tutorials</h6>
+                            <ul class="caret-style pl-0">
+                                <li class=""><a class="menu-item" href="/core">ASP.NET Core</a></li>
+                                <li class=""><a class="menu-item" href="/mvc/asp.net-mvc-tutorials">ASP.NET MVC</a></li>
+                                <li class=""><a class="menu-item" href="/ioc">IoC  </a></li>
+                                <li class=""><a class="menu-item" href="/webapi/web-api-tutorials">web api</a></li>
+                                <li class=""><a class="menu-item" href="/csharp/csharp-tutorials">C#</a></li>
+                                <li class=""><a class="menu-item" href="/linq/linq-tutorials">LINQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xl-3 sub-menu my-xl-4  mt-4 mb-4">
+                            <h6 class="sub-title text-white">Script Tutorials</h6>
+                            <!--Featured image-->
+                            <ul class="caret-style pl-0">
+                                <li class=""><a class="menu-item" href="/typescript">TypeScript</a></li>
+                                <li class=""><a class="menu-item" href="/angularjs/angularjs-tutorials">AngularJS</a></li>
+                                <li class=""><a class="menu-item" href="/nodejs/nodejs-tutorials">Node.js</a></li>
+                                <li class=""><a class="menu-item" href="/d3js">D3.js</a></li>
+                                <li class=""><a class="menu-item" href="/jquery/jquery-tutorials">jQuery</a></li>
+                                <li class=""><a class="menu-item" href="/javascript/javascript-tutorials">JavaScript </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xl-3 sub-menu my-xl-4 mt-4 mb-4">
+                            <h6 class="sub-title text-white">Tutorials</h6>
+                            <!--Featured image-->
+                            <ul class="caret-style pl-0">
+                                <li class=""><a class="menu-item" href="/python">Python</a></li>
+                                <li class=""><a class="menu-item" href="/sass">Sass</a></li>
+                                <li class=""><a class="menu-item" href="/https">Https</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xl-3 sub-menu my-xl-4 mt-4 mb-4">
+                            <h6 class="sub-title  text-white">Skill Tests</h6>
+                            <ul class="caret-style pl-0">
+                                <li class=""><a class="menu-item" href="/online-test/aspnetcore-test">ASP.NET Core</a></li>
+                                <li class=""><a class="menu-item" href="/online-test/mvc-test">ASP.NET MVC</a></li>
+                                <li class=""><a class="menu-item" href="/online-test/linq-test">LINQ</a></li>
+                                <li class=""><a class="menu-item" href="/online-test/csharp-test">C#</a></li>
+                                <li class=""><a class="menu-item" href="/online-test/webapi-test">web api</a></li>
+                                <li class=""><a class="menu-item" href="/online-test/ioc-test">IoC  </a></li>
+                                <li class=""><a class="menu-item" href="/online-test/typescript-test">TypeScript</a></li>
+                                <li class=""><a class="menu-item" href="/online-test/angularjs-test">AngularJS</a></li>
+                                <li class=""><a class="menu-item" href="/online-test/nodejs-test">Node.js</a></li>
+                                <li class=""><a class="menu-item" href="/online-test/jquery-test"> jQuery </a></li>
+                                <li class=""><a class="menu-item" href="/online-test/javascript-test"> JavaScript</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+
+        <!-- Links -->
+        <ul class="navbar-nav nav-flex right ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/articles">Articles</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/online-test">Tests</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/aboutus/write-for-us">Write For Us</a>
+            </li>
+        </ul>
+        <!-- Search form -->
+        <div id="wrap">
+            <form class="navbar-form" action="https://www.google.com/search" id="cse-search-box" role="search" target="_blank">
+                <div>
+                    <input type="hidden" name="cx" value="partner-pub-7448309248176309:9010588392" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="text" name="q" id="q" placeholder="Search" class="form-control" >
+                    <span class="input-group-btn">
+                        <button type="submit" id="search_submit" class="button-search border-0 bg-transparent text-white">
+                            <i class="fa fa-search">
+                            </i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+
+
+        <nav class="navbar menuLeft p-0 navbar-expand-md">
+            <div class="collapse navbar-collapse" id="navbarLeft">
+                <div class="menuVerticalParent">
+                    <ul class="menuVertical" id="leftmenu">
+                        <li class="menu-title">
+                            Python Tutorials
+                        </li>
+                        <li>
+                            <a href="/python">Python - Get Started</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-overview">Python - Overview</a>
+                        </li>
+                        <li>
+                            <a href="/python/environment-setup">Python - Environment Setup</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-interective-shell">Python - Shell</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-idle">Python - IDLE</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-editors">Python - Editors</a>
+                        </li>
+                        
+                        <li>
+                            <a href="/python/python-basic-syntax">Python - Basic Syntax</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-variables">Python - Variables</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-data-types">Python - Data Types</a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="/python/python-number-type">Number</a>
+                                </li>
+                                <li>
+                                    <a href="/python/python-string">String</a>
+                                </li>
+                                <li>
+                                    <a href="/python/python-list">List</a>
+                                </li>
+                                <li>
+                                    <a href="/python/python-tuple">Tuple</a>
+                                </li>
+                                <li>
+                                    <a href="/python/python-set">Set</a>
+                                </li>
+                                <li>
+                                    <a href="/python/python-dictionary">Dictionary</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/python/python-comparison-and-logical-operators">Python - Operators</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-if-elif">Python - Decision Control</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-while-loop">Python - While Loop</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-for-loop">Python - For Loop</a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="/python/python-else-loop">else Loop</a>
+                                </li>
+                                <li>
+                                    <a href="/python/python-break">break</a>
+                                </li>
+                                <li>
+                                    <a href="/python/python-continue">continue</a>
+                                </li>
+                                <li>
+                                    <a href="/python/python-pass">pass</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="/python/python-range-function">Python - range()</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-user-defined-function">Python - Function</a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="/python/python-lambda-function">Lambda Function</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/python/local-and-global-variables-in-python">Python - Variable Scope</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-module">Python - Module</a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="/python/python-module-attributes">Module Attributes</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/python/python-builtin-modules">Python - Built-in Modules</a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="/python/os-module">OS Module</a>
+                                </li>
+                                <li>
+                                    <a href="/python/sys-module">Sys Module</a>
+                                </li>
+                                <li>
+                                    <a href="/python/math-module">Math Module</a>
+                                </li>
+                                <li>
+                                    <a href="/python/statistics-module">Statistics Module</a>
+                                </li>
+                                <li>
+                                    <a href="/python/collections-module">Collections Module</a>
+                                </li>
+                                <li>
+                                    <a href="/python/random-module">Random Module</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/python/python-package">Python - Packages</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-iterator-iter">Python - Iterator</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-generator">Python - Generator</a>
+                        </li>
+
+                        <li>
+                            <a href="/python/python-map-function">Python - Map Function</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-filter">Python - Filter Function</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-reduce-function">Python - Reduce Function</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-list-comprehension">Python - List Comprehension</a>
+                        </li>
+
+                        <li>
+                            <a href="/python/recursion-in-python">Python - Recursion</a>
+                        </li>
+
+                        <li>
+                            <a href="/python/error-types-in-python">Python - Errors</a>
+                        </li>
+                        <li>
+                            <a href="/python/exception-handling-in-python">Python - Exception Handling</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-assert">Python - Assert </a>
+                        </li>
+                        <li>
+                            <a href="/python/python-class">Python - Class</a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="/python/private-and-protected-access-modifiers-in-python">private and protected </a>
+                                </li>
+                                <li>
+                                    <a href="/python/property-function">property() function</a>
+                                </li>
+                                <li>
+                                    <a href="/python/property-decorator">@property Decorator</a>
+                                </li>
+                                <li>
+                                    <a href="/python/classmethod-decorator">@classmethod Decorator</a>
+                                </li>
+                                <li>
+                                    <a href="/python/staticmethod-decorator">@staticmethod Decorator</a>
+                                </li>
+                                <li>
+                                    <a href="/python/inheritance-in-python">Inheritance</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/python/magic-methods-in-python">Python - Magic Methods</a>
+                        </li>
+                        <li>
+                            <a href="/python/database-crud-operation-in-python">Python - Database CRUD</a>
+                        </li>
+                        <li>
+                            <a href="/python/python-read-write-file">Python - File I/O</a>
+                        </li>
+                        <li>
+                            <a href="/python/create-ui-using-tkinter-in-python">Python - Tkinter UI</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Navbar-->
+        <!--/.Navbar-->
+        <section class="middleContent" id="middleContent">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 pr-md-0 col-lg-12 col-xl-8">
+                        <div class="lb-ad mb-2 mt-3">
+                            
+
+<div id='tt_leaderboard_atf_desk'></div>
+<div id='tt_leaderboard_atf_flex_mob'></div>
+                        </div>
+<div class="navigation my-3 pt-2">
+    <div class="row">
+
+            <div class="col-6  text-left mb-2 mb-sm-0"><a id="btnPrev" class="btn  rounded-0" href='/python/recursion-in-python'><i class="fa fa-angle-left mr-1"></i> Previous</a></div>
+
+            <div class="col-6 text-right float-right"><a id="btnNext"class="btn rounded-0" href='/python/exception-handling-in-python'>Next <i class="fa fa-angle-right ml-1"></i></a></div>
+
+
+    </div>
+</div>                        
+    <article class="article">
+        <h1>Python - Error Types </h1>
+        <p>
+            The most common reason of an error in a Python program is when a certain statement is not in accordance with the prescribed usage. 
+            Such an error is called a syntax error. The Python interpreter immediately reports it, usually along with the reason.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; print "hello"<br />
+            SyntaxError: Missing parentheses in call to 'print'. Did you mean print("hello")?
+        </samp>
+        <p>
+            In Python 3.x, print is a built-in function and requires parentheses. The statement above violates this usage and hence syntax error is displayed.
+        </p>
+
+
+        <p>
+            Many times though, a program results in an error after it is run even if it doesn't have any syntax error. Such an error is a runtime error, called an exception. 
+            A number of built-in exceptions are defined in the Python library.
+            Let's see some common error types.
+        </p>
+
+        <p>
+            <strong>IndexError</strong> is thrown when trying to access an item at an invalid index.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; L1=[1,2,3]<br />
+            &gt;&gt;&gt; L1[3]<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#18&gt;", line 1, in &lt;module&gt;
+            <br />
+            L1[3]<br />
+            IndexError: list index out of range
+        </samp>
+        <p>
+            <strong>ModuleNotFoundError</strong> is thrown when a module could not be found.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; import notamodule<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#10&gt;", line 1, in &lt;module&gt;
+            <br />
+            import notamodule<br />
+            ModuleNotFoundError: No module named 'notamodule'
+        </samp>
+        <p>
+            <strong>KeyError</strong> is thrown when a key is not found.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; D1={'1':"aa", '2':"bb", '3':"cc"}<br />
+            &gt;&gt;&gt; D1['4']<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#15&gt;", line 1, in &lt;module&gt;
+
+            <br />
+            D1['4']<br />
+            KeyError: '4'
+        </samp>
+        <p>
+            <strong>ImportError</strong> is thrown when a specified function can not be found.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; from math import cube<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#16&gt;", line 1, in &lt;module&gt;
+            <br />
+            from math import cube<br />
+            ImportError: cannot import name 'cube'
+        </samp>
+        <p>
+            <strong>StopIteration</strong> is thrown when the <code>next()</code> function goes beyond the iterator items.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; it=iter([1,2,3])<br />
+            &gt;&gt;&gt; next(it)<br />
+            1<br />
+            &gt;&gt;&gt; next(it)<br />
+            2<br />
+            &gt;&gt;&gt; next(it)<br />
+            3<br />
+            &gt;&gt;&gt; next(it)<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#23&gt;", line 1, in &lt;module&gt;
+            <br />
+            next(it)<br />
+            StopIteration
+        </samp>
+        <p>
+            <strong>TypeError</strong> is thrown when an operation or function is applied to an object of an inappropriate type.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; '2'+2<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#23&gt;", line 1, in &lt;module&gt;
+            <br />
+            '2'+2<br />
+            TypeError: must be str, not int
+        </samp>
+        <p>
+            <strong>ValueError</strong> is thrown when a function's argument is of an inappropriate type.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; int('xyz')<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#14&gt;", line 1, in &lt;module&gt;
+            <br />
+            int('xyz')<br />
+            ValueError: invalid literal for int() with base 10: 'xyz'
+        </samp>
+        <p>
+            <strong>NameError</strong> is thrown when an object could not be found.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; age<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#6&gt;", line 1, in &lt;module&gt;
+            <br />
+            age<br />
+            NameError: name 'age' is not defined
+        </samp>
+        <p>
+            <strong>ZeroDivisionError</strong> is thrown when the second operator in the division is zero.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; x=100/0<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#8&gt;", line 1, in &lt;module&gt;
+            <br />
+            x=100/0<br />
+            ZeroDivisionError: division by zero
+        </samp>
+        <p>
+            <strong>KeyboardInterrupt</strong> is thrown when the user hits the interrupt key (normally Control-C) during the execution of the program.
+        </p>
+
+        <samp>
+            &gt;&gt;&gt; name=input('enter your name')<br />
+            enter your name^c<br />
+            Traceback (most recent call last):<br />
+            File "&lt;pyshell#9&gt;", line 1, in &lt;module&gt;
+            <br />
+            name=input('enter your name')<br />
+            KeyboardInterrupt
+        </samp>
+        <p>The following table lists important built-in exceptions in Python.</p>
+
+        <div class="table-responsive">
+            <table class="table table-bordered ">
+                <thead>
+                    <tr>
+                        <th>
+                            Exception
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            AssertionError
+                        </td>
+                        <td>
+                            Raised when the assert statement fails.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            AttributeError
+                        </td>
+                        <td>
+                            Raised on the attribute assignment or reference fails.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            EOFError
+                        </td>
+                        <td>
+                            Raised when the input() function hits the end-of-file condition.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            FloatingPointError
+                        </td>
+                        <td>
+                            Raised when a floating point operation fails.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            GeneratorExit
+                        </td>
+                        <td>
+                            Raised when a generator's close() method is called.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ImportError
+                        </td>
+                        <td>
+                            Raised when the imported module is not found.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            IndexError
+                        </td>
+                        <td>
+                            Raised when the index of a sequence is out of range.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            KeyError
+                        </td>
+                        <td>
+                            Raised when a key is not found in a dictionary.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            KeyboardInterrupt
+                        </td>
+                        <td>
+                            Raised when the user hits the interrupt key (Ctrl+c or delete).
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            MemoryError
+                        </td>
+                        <td>
+                            Raised when an operation runs out of memory.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            NameError
+                        </td>
+                        <td>
+                            Raised when a variable is not found in the local or global scope.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            NotImplementedError
+                        </td>
+                        <td>
+                            Raised by abstract methods.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            OSError
+                        </td>
+                        <td>
+                            Raised when a system operation causes a system-related error.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            OverflowError
+                        </td>
+                        <td>
+                            Raised when the result of an arithmetic operation is too large to be represented.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ReferenceError
+                        </td>
+                        <td>
+                            Raised when a weak reference proxy is used to access a garbage collected referent.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            RuntimeError
+                        </td>
+                        <td>
+                            Raised when an error does not fall under any other category.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            StopIteration
+                        </td>
+                        <td>
+                            Raised by the next() function to indicate that there is no further item to be returned by the iterator.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            SyntaxError
+                        </td>
+                        <td>
+                            Raised by the parser when a syntax error is encountered.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            IndentationError
+                        </td>
+                        <td>
+                            Raised when there is an incorrect indentation.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            TabError
+                        </td>
+                        <td>
+                            Raised when the indentation consists of inconsistent tabs and spaces.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            SystemError
+                        </td>
+                        <td>
+                            Raised when the interpreter detects internal error.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            SystemExit
+                        </td>
+                        <td>
+                            Raised by the sys.exit() function.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            TypeError
+                        </td>
+                        <td>
+                            Raised when a function or operation is applied to an object of an incorrect type.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            UnboundLocalError
+                        </td>
+                        <td>
+                            Raised when a reference is made to a local variable in a function or method, but no value has been bound to that variable.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            UnicodeError
+                        </td>
+                        <td>
+                            Raised when a Unicode-related encoding or decoding error occurs.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            UnicodeEncodeError
+                        </td>
+                        <td>
+                            Raised when a Unicode-related error occurs during encoding.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            UnicodeDecodeError
+                        </td>
+                        <td>
+                            Raised when a Unicode-related error occurs during decoding.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            UnicodeTranslateError
+                        </td>
+                        <td>
+                            Raised when a Unicode-related error occurs during translation.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ValueError
+                        </td>
+                        <td>
+                            Raised when a function gets an argument of correct type but improper value.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ZeroDivisionError
+                        </td>
+                        <td>
+                            Raised when the second operand of a division or module operation is zero.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Visit <a href="https://docs.python.org/3.4/library/exceptions.html" target="_blank" class="external-link">Python Docs</a> for more information.</p>
+        <p>Learn how to handle exceptions in the next chapter.</p>
+    </article>
+
+                        
+<div id="social-platforms" class="mt-4 mb-4">
+    <ul class="row align-items-center">
+        <li class="col-md-3  col-sm-6 pl-lg-0">
+            <a class="btn btn-icon btn-facebook" id="fbshare"><i class="fa fa-facebook"></i><span>Share</span></a>
+        </li>
+        <li class="col-md-3 col-sm-6 pl-sm-0"> <a class="btn btn-icon btn-twitter " onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" href="https://twitter.com/share?url=https://www.tutorialsteacher.com/python/error-types-in-python&text=Error Types in Python" target="_blank"><i class="fa fa-twitter"></i><span> Tweet</span></a></li>
+        <li class="col-md-3 col-sm-6 pl-sm-0"> <a class="btn btn-icon btn-linkedin " href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.tutorialsteacher.com/python/error-types-in-python&title=Error Types in Python&summary=&source=" target="_blank"><i class="fa fa-linkedin"></i><span>Share</span></a></li>
+        <li class="col-md-3 col-sm-6 pl-md-0"> <a class="btn btn-icon btn-whatsapp" href="https://wa.me/?text=https%3a%2f%2fwww.tutorialsteacher.com%2fpython%2ferror-types-in-python" target="_blank"><i class="fa fa-whatsapp"></i><span>Whatsapp</span></a></li>
+    </ul>
+</div>
+<div id="fb-root"></div>
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=1993456930718907&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+document.getElementById('fbshare').onclick = function () {
+    FB.ui({
+        method: 'share',
+        href: 'https://www.tutorialsteacher.com/python/error-types-in-python'
+    }, function (response) { });
+}
+</script>
+
+
+                        
+<hr />
+<center class="mt-4 mb-4">
+    
+    <div id='tt_leaderboard_btf_desk'></div>
+    <div id='tt_rectangle_btf_mobile'></div>
+</center>
+<div class="navigation my-3 pt-2">
+    <div class="row">
+
+            <div class="col-6  text-left mb-2 mb-sm-0"><a id="btnPrev" class="btn  rounded-0" href='/python/recursion-in-python'><i class="fa fa-angle-left mr-1"></i> Previous</a></div>
+
+            <div class="col-6 text-right float-right"><a id="btnNext"class="btn rounded-0" href='/python/exception-handling-in-python'>Next <i class="fa fa-angle-right ml-1"></i></a></div>
+
+
+    </div>
+</div>                        </div>
+                    
+<div class="d-none d-xl-block col-xl-4 rightSidebar">
+    <div class="row">
+        <div class="col-12">
+            <div class="rect-ad mt-3 ml-2">
+                
+                <div id='tt_sidebar_rectangle_desk'></div>
+            </div>
+            <div class="rect-ad mt-3 ml-2"  id="stickyAdDiv">
+                
+                <div id='tt_right_sidebar_sticky_desk'></div>
+            </div>
+
+        </div>
+        
+
+        
+
+        
+    </div>
+</div>
+
+                </div>
+            </div>
+            <footer class="section footer pt-5">
+    <div class="footer-main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-md-5 ">
+                            <div class="edugate-widget widget">
+                                <div class="title-widget">TutorialsTeacher.com</div>
+                                <div class="content-widget">
+                                    <p>
+                                        TutorialsTeacher.com is optimized for learning web technologies step by step.
+                                        Examples might be simplified to improve reading and basic understanding.
+                                        While using this site, you agree to have read and accepted our terms
+                                        of use and <a href="/aboutus/privacy-policy">privacy policy</a>.
+                                    </p>
+                                    <div class="info-list">
+                                        <ul class="list-unstyled">
+                                            <li><i class="fa fa-envelope-o"></i><a href="/cdn-cgi/l/email-protection#50363535343231333b102425243f2239313c23243531333835227e333f3d"> <span class="__cf_email__" data-cfemail="c2a4a7a7a6a0a3a1a982b6b7b6adb0aba3aeb1b6a7a3a1aaa7b0eca1adaf">[email&#160;protected]</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="useful-link-widget widget">
+                                <div class="title-widget">Tutorials</div>
+                                <div class="content-widget">
+                                    <div class="useful-link-list">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="fa fa-angle-right"></i><a href="/core">ASP.NET Core</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/mvc/asp.net-mvc-tutorials">ASP.NET MVC</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/ioc">IoC</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/webapi/web-api-tutorials">Web API</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/csharp/csharp-tutorials">C#</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/linq/linq-tutorials">LINQ</a></li>
+                                                    <li>
+                                                        <i class="fa fa-angle-right"></i><a href="https://www.entityframeworktutorial.net"
+                                                                                            target="_blank" rel="nofollow">Entity Framework</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 ">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="fa fa-angle-right"></i><a href="/angularjs/angularjs-tutorials">AngularJS 1</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/nodejs/nodejs-tutorials">Node.js</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/d3js">D3.js</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/javascript/javascript-tutorials">JavaScript</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/jquery/jquery-tutorials">jQuery</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/sass">Sass</a></li>
+                                                    <li><i class="fa fa-angle-right"></i><a href="/https">Https</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="mailing-widget widget">
+                                <div class="title-widget">E-mail list</div>
+                                <div class="content-wiget">
+                                    <p>
+                                        Subscribe to TutorialsTeacher email list and get latest updates, tips &amp;
+                                        tricks on C#, .Net, JavaScript, jQuery, AngularJS, Node.js to your inbox.
+                                    </p>
+                                    <form action="https://tutorialsteacher.us13.list-manage.com/subscribe/post-json?u=78cbe5cadd7cc1475359445ad&id=d119ae6be2" method="post" id="subscribe-form" name="subscribe-form" class="validate" novalidate>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Email address" class="form-control form-email-widget" name="MERGE0" id="MERGE0" size="25" /><span class="input-group-btn"><input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="btn btn-email" /></span>
+                                        </div>
+
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display: none"></div>
+                                            <div class="response" id="mce-success-response" style="display: none"></div>
+                                        </div>
+                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                            <input type="text" name="b_659e2cbd2829799e7dc94ae35_93dae2ea03" tabindex="-1" value="" />
+                                        </div>
+                                        <div class="alert-success" id="successMsg"></div>
+                                        <div class="alert-danger" id="failMsg"></div>
+
+                                    </form>
+                                    <p>We respect your privacy.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row hyperlink text-center text-md-left">
+                <div class="col-md-6 hyper-left">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="/">HOME</a></li>
+                        <li class="list-inline-item"><a href="/aboutus/privacy-policy">PRIVACY POLICY</a></li>
+                        <li class="list-inline-item"><a href="/aboutus/terms-of-use">TERMS OF USE</a></li>
+                        <li class="list-inline-item"><a href="/aboutus/advertise">ADVERTISE WITH US</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 hyper-right text-center text-md-right">
+                    <i class="fa fa-copyright" aria-hidden="true"></i> 2019 TutorialsTeacher.com. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+
+        </section>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="/Content/bs/bootstrap.min.js"></script>
+    <script src="/Content/scripts/ttGeneralScript.js?v=1"></script>
+    <script type="text/javascript">
+
+        function setActiveLeftMenu() {
+            var actionName; 
+            var controllerName = 'python'.replace(/_/g, "-");
+
+            if ('' == 'True')
+                actionName  = '';
+            else
+                actionName = 'error_types_in_python'.replace(/_/g, "-"); 
+
+              if ($('#leftmenu li a[href="/' + controllerName + '/' + actionName + '"]').length == 0)
+                  $('#leftmenu li a[href="/' + controllerName + '"]').addClass('active')
+              else
+                  $('#leftmenu li a[href="/' + controllerName + '/' + actionName + '"]').addClass('active')
+            //top menu active menu
+              $('#topMenu > ul li a[href *="/' + controllerName + '"]').addClass('active')
+
+        }
+
+        $(document).ready(function () {
+
+            stickTLMenus();
+                stickyAd();
+            var temp = $(window).height();
+
+            //$('#back-top a').addClass('d-none');
+            $(window).scroll(function () {
+                stickTLMenus();
+                stickyAd();
+
+                //if ($(window).scrollTop() > temp) {
+                //    $('#back-top a').addClass('d-block');
+                //    $('#back-top a').removeClass('d-none');
+                //}
+                //else {
+                //    $('#back-top a').addClass('d-none');
+                //    $('#back-top a').removeClass('d-block');
+                //}
+            });
+
+            setActiveLeftMenu();
+            maintainLeftMenuPos();
+            $("#subscribe-form").on("submit", function (s) { s.preventDefault(), submitSubscribeForm($("#subscribe-form")) })
+        });
+    </script>
+</body>
+</html>
