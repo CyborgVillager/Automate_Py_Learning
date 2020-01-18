@@ -1,0 +1,29 @@
+ Key Legend:
+                -- = current version
+                -wor: = working on this ver
+                 <-x_x-> = bug
+                 |x_x| = bug fixed
+                 <-o_o-> = design issue
+                 |o_o| = design issue fixed
+
+
+                     ~Updating to repo~
+               | --------------------------- |
+               | v# : Short Version Title    |
+               | Description: v# description |
+               | --------------------------- |
+
+ v0 README created: README.txt created, will be using chapter -> Working With Excel as version 0, and build upon
+                        that. Due to previous versions for this respo had 0 Version_Info.txt till now.
+                        Folders that are not part v0 are the following:
+                        -first_steps
+                        -Key_Mouse_Gui_Automation
+                        -math_quiz
+                        -pattern_matching_reg_expression
+                        -second_step
+
+                        Any future version info will have their respective data included.
+
+ --v1 Version_Info & working_with_excel Source created : Updated the respo on the information regarding old code that are
+                                                            not part of v0, and what future version info will discuss.
+                                                            Source folder for working_with_excel has been created.
