@@ -24,6 +24,9 @@
 
                         Any future version info will have their respective data included.
 
- --v1 Version_Info & working_with_excel Source created : Updated the respo on the information regarding old code that are
+ v1 Version_Info & working_with_excel Source created : Updated the respo on the information regarding old code that are
                                                             not part of v0, and what future version info will discuss.
                                                             Source folder for working_with_excel has been created.
+
+ --v2 Aquired Example Excel: aquired example excel sheets, and made 2 .py files excel_0 & excel_1 to make references to
+                                their respective excel files and aquired the sheet info
