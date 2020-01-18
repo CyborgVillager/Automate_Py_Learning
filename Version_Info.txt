@@ -28,5 +28,8 @@
                                                             not part of v0, and what future version info will discuss.
                                                             Source folder for working_with_excel has been created.
 
- --v2 Aquired Example Excel: aquired example excel sheets, and made 2 .py files excel_0 & excel_1 to make references to
+ v2 Aquired Example Excel Sheets: aquired example excel sheets, and made 2 .py files excel_0 & excel_1 to make references to
                                 their respective excel files and aquired the sheet info
+
+ --v3 Getting Cell Info from Sheet: Users can see the sheet's cell info from excel_2.py and get a sense of what data the
+                                        cells are holding in the excel sheet.
