@@ -76,13 +76,16 @@ v5 Getting Rows & Columns from Sheet info Part 1: the py file excel_4.py  aquire
   ----------------------------    ----------------------------   ------------------------- ------------------------------
   v8 Will be reactivated @ 1/20/20:  excel_7.py work in prog - reactivated @ 1/20/20
 
-  --v9 Web Scrap Reactivated: created a new folder called Web_Scrap and moved web_scrapping (OLD) to it. Made a new folder
+  v9 Web Scrap Reactivated: created a new folder called Web_Scrap and moved web_scrapping (OLD) to it. Made a new folder
                                 called web_scrapping_1_19_20, this will be the outlet for the GUI mini project
                                 combining tkinter to make a gui interface, in which the
                                         user will get info from a site and have the option to export it as an excel
                                         sheet
 
 
-
+--v10 Basic Web Scrap: basic web scrap for monster.com, will be improving upon the concept and add more features
+                        on later versions. New source folder/file has been created called web_scrap_source
+                        new file to scrap monster.com is called monster_scrap.py. These files can be located @
+                        Web_scrapping_1_19_20
 
 
