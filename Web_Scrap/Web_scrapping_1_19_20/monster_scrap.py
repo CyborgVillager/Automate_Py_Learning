@@ -27,12 +27,21 @@ for job_element in job_elements:
     job_title_element = job_element.find('h2', class_='title')
     # Further job filtering to ensure the user gets the job postings that they want to see
     job_filter = results.find_all('h2', string=lambda text:user_job_want in text.lower())
+    # links the program to the job link. This will give the user an
+    # ability to further read the job posting info
+for posted_job in job_filter:
+    link = posted_job.find('a')['href']
+    print(posted_job.text.strip())
+    print(f"Click here to apply: {link}\n")
+
     company_name_element = job_element.find('div', class_='company')
     location_element = job_element.find('div', class_='location')
+
 
 # Checks if the data is N/A it will tell the program just to continue
     if None in (job_title_element, company_name_element, location_element):
         continue
+
 
 # RED = Job Title, # Green = Company Name, # Blue = Job/Buisness Location
     print(red + bold + str(job_title_element.text.strip()) + end)

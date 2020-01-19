@@ -81,7 +81,9 @@ v5 Getting Rows & Columns from Sheet info Part 1: the py file excel_4.py  aquire
                                 combining tkinter to make a gui interface, in which the
                                         user will get info from a site and have the option to export it as an excel
                                         sheet
-
+                                        Modification of
+                                        https://realpython.com/beautiful-soup-web-scraper-python/ to include a
+                                        more indepth info about web-scraping
 
 v10 Basic Web Scrap: basic web scrap for monster.com, will be improving upon the concept and add more features
                         on later versions. New source folder/file has been created called web_scrap_source
@@ -111,3 +113,5 @@ v13 Check if Keyword is Refine: Monster_Scrap.py will help assist the user if th
                                          Due to the user only have to type the job name & location. This
                                          statement became irrelevant
   ----------------------------    ----------------------------   ------------------------- ------------------------------
+--v14 Added Links: Users can click on the links to job postings. This will give the user an
+                ability to further read the job posting info
