@@ -53,7 +53,7 @@ v5 Getting Rows & Columns from Sheet info Part 1: the py file excel_4.py  aquire
                                                          https://stackoverflow.com/questions/42603795/typeerror-generator-object-is-not-subscriptable
                                                          The .py file excel_5 has been updated to fit 2020's standard
 
- --v7 Updated Census Data to 2020 format : Made a .py file called excel_6 in wghich will read the census
+ v7 Updated Census Data to 2020 format : Made a .py file called excel_6 in wghich will read the census
                                                         population from excel_docs/censuspopdata.xlsx
 
                                                         It will conver the population & the number of census tracts for
@@ -68,6 +68,11 @@ v5 Getting Rows & Columns from Sheet info Part 1: the py file excel_4.py  aquire
                                                         Also remember to check the library updated information regaarding
                                                         openpyxl & pprint https://docs.python.org/3/library/pprint.html
                                                         https://openpyxl.readthedocs.io/en/stable/
+
+                                          --v7.5 Edit: Deleted census2010 data, feel free to use excel_6.py/run it.
+                                            Once it has run census2010 will be filled with the data again.
+                                            Can be used for 2020, for that you just need to include the data that the
+                                            excel sheet for census2020 will have
   ----------------------------    ----------------------------   ------------------------- ------------------------------
   -wor:v8:
 
