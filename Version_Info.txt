@@ -36,3 +36,9 @@
 
  --v4 Excel Max Rw & Column : Made a file called excel_3.py in which the user will be able to see the sheet#, max rows
                                 max columns, and see the results in a sentence format
+
+                             v4.5 Edit: Will be finishing up on python excel. Afterwords will get back to web-scraping.
+                                        With these two Ill be combining tkinter to make a gui interface, in which the
+                                        user will get info from a site and have the option to export it as an excel
+                                        sheet
+
