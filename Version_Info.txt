@@ -74,7 +74,14 @@ v5 Getting Rows & Columns from Sheet info Part 1: the py file excel_4.py  aquire
                                             Can be used for 2020, for that you just need to include the data that the
                                             excel sheet for census2020 will have
   ----------------------------    ----------------------------   ------------------------- ------------------------------
-  -wor:-v8 Will be reactivated @ 1/20/20:  excel_7.py work in prog - reactivated @ 1/20/20
+  v8 Will be reactivated @ 1/20/20:  excel_7.py work in prog - reactivated @ 1/20/20
+
+  --v9 Web Scrap Reactivated: created a new folder called Web_Scrap and moved web_scrapping (OLD) to it. Made a new folder
+                                called web_scrapping_1_19_20, this will be the outlet for the GUI mini project
+                                combining tkinter to make a gui interface, in which the
+                                        user will get info from a site and have the option to export it as an excel
+                                        sheet
+
 
 
 
