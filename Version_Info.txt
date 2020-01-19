@@ -74,7 +74,7 @@ v5 Getting Rows & Columns from Sheet info Part 1: the py file excel_4.py  aquire
                                             Can be used for 2020, for that you just need to include the data that the
                                             excel sheet for census2020 will have
   ----------------------------    ----------------------------   ------------------------- ------------------------------
-  -wor:v8:
+  -wor:-v8 Will be reactivated @ 1/20/20:  excel_7.py work in prog - reactivated @ 1/20/20
 
 
 
