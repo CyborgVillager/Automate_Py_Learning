@@ -88,10 +88,14 @@ v10 Basic Web Scrap: basic web scrap for monster.com, will be improving upon the
                         new file to scrap monster.com is called monster_scrap.py. These files can be located @
                         Web_scrapping_1_19_20
 
---v11 Updated Web Scrap Monster: Updated monster_scrap.py to include more info and to give visual cues to help
+v11 Updated Web Scrap Monster: Updated monster_scrap.py to include more info and to give visual cues to help
                                aid the user in the terminal. Once the web scrap is 100% complete will conver this into
                                a gui interface & give an export option to excel.
 
                                Made a new source file called colors.py to help with the visual aid
+
+
+--v12 Visual Cue & Modified Monster_Scrap.py: Updated the file to check if the information is not N/A. If not
+                                                It will just continue and show the other job postings
 
 
