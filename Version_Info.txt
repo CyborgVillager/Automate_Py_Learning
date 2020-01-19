@@ -31,5 +31,8 @@
  v2 Aquired Example Excel Sheets: aquired example excel sheets, and made 2 .py files excel_0 & excel_1 to make references to
                                 their respective excel files and aquired the sheet info
 
- --v3 Getting Cell Info from Sheet: Users can see the sheet's cell info from excel_2.py and get a sense of what data the
+ v3 Getting Cell Info from Sheet: Users can see the sheet's cell info from excel_2.py and get a sense of what data the
                                         cells are holding in the excel sheet.
+
+ --v4 Excel Max Rw & Column : Made a file called excel_3.py in which the user will be able to see the sheet#, max rows
+                                max columns, and see the results in a sentence format
