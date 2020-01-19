@@ -2,7 +2,6 @@ from web_scrap_source import *
 from colors import *
 
 # Ask's the user for some basic information on what job/career they are looking for & the location
-print('Once you have placed a Url, press Space then hit Enter to continue.')
 user_job_want = input('Type the job/career you are looking for: ').lower()
 user_job_location = input('Type the city name you would like this job/career to be: ' + red + '\n'
                           'If your looking for a remote position type remote: ' + end)

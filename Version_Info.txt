@@ -106,3 +106,8 @@ v13 Check if Keyword is Refine: Monster_Scrap.py will help assist the user if th
                                          if the user keyword has no results, it will notify them of the issue and ask
                                          them to refine their input, else it will tell them the number of times their
                                          keyword pops up on the site
+                                         --Removed--
+                                         print('Once you have placed a Url, press Space then hit Enter to continue.')
+                                         Due to the user only have to type the job name & location. This
+                                         statement became irrelevant
+  ----------------------------    ----------------------------   ------------------------- ------------------------------
