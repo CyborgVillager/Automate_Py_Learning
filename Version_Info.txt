@@ -42,5 +42,14 @@
                                         user will get info from a site and have the option to export it as an excel
                                         sheet
 
---v5 Getting Rows & Columns from Sheet info: the py file excel_4.py  aquires the cell objects from A1 - D3 and makes
+v5 Getting Rows & Columns from Sheet info Part 1: the py file excel_4.py  aquires the cell objects from A1 - D3 and makes
                                                 a 'container of each subject with their  corrisponding data
+ ----------------------------    ----------------------------   ------------------------- ------------------------------
+ --v6 Getting Rows & Columns from Sheet info Part 2: This time the py file excel_5.py will aquire the list value of
+                                                        each row/column and prints its corrisponding information to the
+                                                         user.
+                                                         An updated solution to the outdate information that was on
+                                                         the book can be found @
+                                                         https://stackoverflow.com/questions/42603795/typeerror-generator-object-is-not-subscriptable
+                                                         The .py file excel_5 has been updated to fit 2020's standard
+
