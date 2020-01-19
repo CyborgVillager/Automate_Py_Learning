@@ -16,5 +16,4 @@ import pprint
 # to make an illusion of Reading Rows @ excel_6.py. This is mostly to give an loading bar appearance
 ### LIBRARY IMPORT ###
 import time
-countyData = {}
 ### LIBRARY IMPORT ###
