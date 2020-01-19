@@ -42,6 +42,8 @@ for job_element in job_elements:
     # Spaces between the other job postings
     print()
 
+# if the user keyword has no results, it will notify them of the issue and ask them to refine their input, else
+# it will tell them the number of times their keyword pops up on the site
 if len(job_filter) == 0:
     print('You have' + bold + red + ' no matches' + end + ', for your keyword: ' + bold + yellow +
           str(user_job_want).capitalize() + end + '. Please refine your keyword/location.')
