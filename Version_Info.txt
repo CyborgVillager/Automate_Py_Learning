@@ -95,7 +95,10 @@ v11 Updated Web Scrap Monster: Updated monster_scrap.py to include more info and
                                Made a new source file called colors.py to help with the visual aid
 
 
---v12 Visual Cue & Modified Monster_Scrap.py: Updated the file to check if the information is not N/A. If not
+v12 Visual Cue & Modified Monster_Scrap.py: Updated the file to check if the information is not N/A. If not
                                                 It will just continue and show the other job postings
 
+--v13 Check if Keyword is Refine: Monster_Scrap.py will help assist the user if their keyword for their job/career is
+                                    refined enough to be searched on the site. If not it will notify them of this issue
+                                     and tell them to refine their keyword of either the job or location
 
