@@ -83,9 +83,15 @@ v5 Getting Rows & Columns from Sheet info Part 1: the py file excel_4.py  aquire
                                         sheet
 
 
---v10 Basic Web Scrap: basic web scrap for monster.com, will be improving upon the concept and add more features
+v10 Basic Web Scrap: basic web scrap for monster.com, will be improving upon the concept and add more features
                         on later versions. New source folder/file has been created called web_scrap_source
                         new file to scrap monster.com is called monster_scrap.py. These files can be located @
                         Web_scrapping_1_19_20
+
+--v11 Updated Web Scrap Monster: Updated monster_scrap.py to include more info and to give visual cues to help
+                               aid the user in the terminal. Once the web scrap is 100% complete will conver this into
+                               a gui interface & give an export option to excel.
+
+                               Made a new source file called colors.py to help with the visual aid
 
 
