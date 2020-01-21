@@ -117,6 +117,11 @@ v14 Added Links: Users can click on the links to job postings. This will give th
                 ability to further read the job posting info
 
 
---v15 Added Excel Sheets: Added Excel Sheets example from Automate with Python, will be using these to help further
+v15 Added Excel Sheets: Added Excel Sheets example from Automate with Python, will be using these to help further
                             for python -> excel. These will help with the GUI process of exporting the data to be used
                                 in an excel format.
+
+                   --v15.5 Edit: Process Temporarily Halted will resume progress on 1/22/20
+                                1/21/20 will resume Learning_py_info -> https://github.com/CyborgVillager/Learning_py_info
+
+-wor:v16:
