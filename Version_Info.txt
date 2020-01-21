@@ -113,5 +113,10 @@ v13 Check if Keyword is Refine: Monster_Scrap.py will help assist the user if th
                                          Due to the user only have to type the job name & location. This
                                          statement became irrelevant
   ----------------------------    ----------------------------   ------------------------- ------------------------------
---v14 Added Links: Users can click on the links to job postings. This will give the user an
+v14 Added Links: Users can click on the links to job postings. This will give the user an
                 ability to further read the job posting info
+
+
+--v15 Added Excel Sheets: Added Excel Sheets example from Automate with Python, will be using these to help further
+                            for python -> excel. These will help with the GUI process of exporting the data to be used
+                                in an excel format.
