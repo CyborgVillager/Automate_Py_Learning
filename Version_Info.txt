@@ -121,7 +121,7 @@ v15 Added Excel Sheets: Added Excel Sheets example from Automate with Python, wi
                             for python -> excel. These will help with the GUI process of exporting the data to be used
                                 in an excel format.
 
-                   --v15.5 Edit: Process Temporarily Halted will resume progress on 1/22/20
+                   v15.5 Edit: Process Temporarily Halted will resume progress on 1/22/20
                                 1/21/20 will resume Learning_py_info -> https://github.com/CyborgVillager/Learning_py_info
 
                    --v15.8 Edit: Progress will resume on 1/25/20
