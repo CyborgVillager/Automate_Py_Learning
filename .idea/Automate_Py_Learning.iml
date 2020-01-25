@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/web_scraping/source" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/working_with_excel/source" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Web_Scrap/Web_scrapping_1_19_20/source" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Web_Scrap/Web_scrapping_1_25_20/source" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/automate_pyvenv" />
     </content>
     <orderEntry type="inheritedJdk" />
