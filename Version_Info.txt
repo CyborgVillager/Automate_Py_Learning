@@ -129,5 +129,8 @@ v15 Added Excel Sheets: Added Excel Sheets example from Automate with Python, wi
 v16 Mini Scrap: Mini foldr created @ Web_Scrap -> Web_scrapping_1_25_20. This includes a new folder called source and a file
         called webscrap0.py scraps https://docs.python.org/3/py-modindex.html
 
--v17 Mind Private: 49 74 73 20 74 69 6d 65 2c 20 74 6f 20 63 72 65 61 74 65 20 61 20 6d 69 6e 64
+v17 Mind Private: 49 74 73 20 74 69 6d 65 2c 20 74 6f 20 63 72 65 61 74 65 20 61 20 6d 69 6e 64
                         Feb/5/2020
+
+
+--v18 License: added License, feel free to edit/test some new things!
